@@ -9,10 +9,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mx-[40px] 2xl:mx-[60px]">
+    <div className=" lg:mx-[40px]  lg:pt-0 2xl:mx-[60px]">
       <Banner />
       <ReachOut />
-      <Category />
+      <Category />\
       <ProductListSection
         data={dailyBajarData}
         title={"Daily Bazar"}

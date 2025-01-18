@@ -25,15 +25,15 @@ export default function Slider() {
                 }}
                 
                 modules={[Pagination , Autoplay]}
-                className="mySwiper h-full">
+                className="mySwiper z-[-1] h-full">
                 <SwiperSlide>
-                    <Image src={"/images/banner_image_1.png"} alt='banner' className='rounded-[10px] ' layout='fill' />
+                    <Image src={"/images/banner_image_1.png"} alt='banner' className='rounded-[10px] !z-[-50]' layout='fill' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src={"/images/banner_image_1.png"} alt='banner' className='rounded-[10px] ' layout='fill' />
+                    <Image src={"/images/banner_image_1.png"} alt='banner' className='rounded-[10px] !z-[-50]' layout='fill' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src={"/images/banner_image_1.png"} alt='banner' className='rounded-[10px] ' layout='fill' />
+                    <Image src={"/images/banner_image_1.png"} alt='banner' className='rounded-[10px] !z-[-50]' layout='fill' />
                 </SwiperSlide>
 
             </Swiper>

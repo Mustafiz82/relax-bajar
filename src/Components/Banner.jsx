@@ -8,8 +8,8 @@ const Banner = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="flex gap-5 my-5">
-      <ul className="w-1/4 duration-300 relative min-h-[400px] 2xl:min-h-[600px] rounded-[10px] p-6 space-y-4 2xl:space-y-6 bg-white">
+    <div className="flex gap-5 lg:my-5">
+      <ul className="w-1/4 hidden lg:block duration-300 relative min-h-[400px] 2xl:min-h-[600px] rounded-[10px] p-6 space-y-4 2xl:space-y-6 bg-white">
         {navData?.map((item, idx) => (
           <li
             key={idx}
@@ -21,14 +21,14 @@ const Banner = () => {
 
             {/* Subcategories Dropdown */}
             <div
-              className={`absolute top-[20px] left-[200px] z-[999] bg-white text-black min-h-[300px] shadow-md duration-300 ease-in-out transform ${
+              className={`absolute -mt-16 top-[20px] left-[200px] z-[999]  text-black  min-h-[300px] shadow-md duration-300 ease-in-out transform ${
                 hoveredIndex === idx && item?.subCategories?.length
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 pointer-events-none"
               }`}
             >
               {item?.subCategories?.[0]?.title ? (
-                <div className="duration-300 min-w-[500px] flex px-5 py-6 gap-10">
+                <div className="duration-300  min-w-[500px] flex px-5 py-6 gap-10">
                   {item?.subCategories?.map((subItem, subIdx) => (
                     <div key={subIdx} className="flex-1">
                       <p className="text-lg cursor-pointer 2xl:text-xl font-bold">
@@ -62,7 +62,7 @@ const Banner = () => {
           </li>
         ))}
       </ul>
-      <div className="bg-primary overflow-hidden rounded-[10px] relative min-h-[400px] w-3/4">
+      <div className="bg-primary mt-1 !z-[-9999] overflow-hidden lg:rounded-[10px]  min-h-[250px] relative lg:min-h-[400px] w-full lg:w-3/4">
         <Slider />
       </div>
     </div>
