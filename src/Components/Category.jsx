@@ -3,7 +3,7 @@ import { categoryData } from '@/Data/CategoryData';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { MdKeyboardArrowUp } from "react-icons/md";
-import ProductCard from './ProductCard';
+import ProductCard from '../shared/ProductCard';
 
 const Category = () => {
     const [expandedCategory, setExpandedCategory] = useState(null);

@@ -1,6 +1,8 @@
 import Banner from "@/Components/Banner";
 import Category from "@/Components/Category";
 import ReachOut from "@/Components/ReachOut";
+import { dailyBajarData } from "@/Data/DailyBajarData";
+import ProductListSection from "@/shared/ProductListSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +11,10 @@ export default function Home() {
       <Banner />
       <ReachOut />
       <Category />
+      <ProductListSection
+        data={dailyBajarData}
+        title={"Daily Bazar"}
+      />
     </div>
   );
 }

@@ -23,7 +23,7 @@ const Nav = () => {
             <div className='flex text-2xl 2xl:text-3xl text-primary ml-5 gap-10'>
                 <MdOutlineShoppingCart />
                 <IoNotificationsOutline />
-                <Image width={1000} height={1000} src={"/icons/profile.svg"} className='!h-[24px] 2xl:!h-[30px] !w-[24px] 2xl:!w-[30px] ' />
+                <Image alt='profile' width={1000} height={1000} src={"/icons/profile.svg"} className='!h-[24px] 2xl:!h-[30px] !w-[24px] 2xl:!w-[30px] ' />
 
             </div>
 

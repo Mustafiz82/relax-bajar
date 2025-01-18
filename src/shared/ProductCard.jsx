@@ -15,7 +15,14 @@ const ProductCard = ({ item }) => {
                 />
             </div>
 
-            <h1 className='text-2xl font-medium'>{item?.name}</h1>
+            <h1 className='text-2xl font-medium'>
+                {item?.name?.split('(')[0]}
+                {item?.name?.includes('(') && (
+                    <span className="block">
+                        ({item?.name.split('(')[1]}
+                    </span>
+                )}
+            </h1>
             <h2 className='py-1 rounded-full w-1/2 text-center text-white bg-primary'>{item?.weight}</h2>
             <div className='flex items-center justify-between'>
                 <h2
@@ -25,7 +32,7 @@ const ProductCard = ({ item }) => {
                 </h2>
 
                 <div className='bg-primary p-1 rounded-[10px]'>
-                    <FaPlus className='text-2xl text-white'/>
+                    <FaPlus className='text-2xl text-white' />
                 </div>
             </div>
         </div>
