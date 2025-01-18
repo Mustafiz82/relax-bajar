@@ -33,7 +33,7 @@ const Category = () => {
     return (
         <div className="my-14 border-2 transition-[height] duration-500 border-primary rounded-[10px] p-5">
             <div className="flex justify-between">
-                <h1 className="text-2xl font-bold text-primary">Product Category</h1>
+                <h1 className="text-xl 2xl:text-2xl font-bold text-primary">Product Category</h1>
                 <div onClick={handleShowCategoryProduct} className='flex gap-1 cursor-pointer items-center'>
                     <span> View more</span>
                     <button
@@ -65,7 +65,7 @@ const Category = () => {
                                     objectFit="contain"
                                 />
                             </div>
-                            <h1 className="text-primary text-2xl font-medium">{item?.name}</h1>
+                            <h1 className="text-primary text-xl 2xl:text-2xl font-medium">{item?.name}</h1>
                             <button
                                 className={`text-2xl text-primary transition-transform duration-300 ${expandedCategory === idx ? 'rotate-180' : ''}`}
                             >

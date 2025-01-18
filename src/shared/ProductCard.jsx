@@ -6,16 +6,19 @@ import { FaPlus } from "react-icons/fa6";
 const ProductCard = ({ item }) => {
     return (
         <div className='p-5 space-y-3 bg-white'>
-            <div className="relative w-full h-0 pb-[100%]">
+            <div className="relative  w-full h-0 pb-[100%]">
                 <Image
                     src={item?.image}
                     alt={item?.name}
                     layout="fill"
                     objectFit="contain"
+                    className='  '
                 />
             </div>
 
-            <h1 className='text-2xl font-medium'>
+            <h1
+                style={{ minHeight: 'calc(2 * 1.25rem + 1.75rem)' }}
+                className='text-xl line-clamp-2 leading-7     2xl:text-2xl font-medium'>
                 {item?.name?.split('(')[0]}
                 {item?.name?.includes('(') && (
                     <span className="block">
@@ -23,16 +26,16 @@ const ProductCard = ({ item }) => {
                     </span>
                 )}
             </h1>
-            <h2 className='py-1 rounded-full w-1/2 text-center text-white bg-primary'>{item?.weight}</h2>
+            <h2 className='py-1 rounded-full w-1/2 text-center text-white bg-primary text-sm 2xl:text-base'>{item?.weight}</h2>
             <div className='flex items-center justify-between'>
                 <h2
-                    className='text-xl  text-primary flex gap-1 items-center'>
+                    className='text-lg 2xl:text-xl  text-primary flex gap-1 items-center'>
                     <TbCurrencyTaka className='text-2xl' />
                     {item?.price}
                 </h2>
 
                 <div className='bg-primary p-1 rounded-[10px]'>
-                    <FaPlus className='text-2xl text-white' />
+                    <FaPlus className='text-xl 2xl:text-2xl text-white' />
                 </div>
             </div>
         </div>
