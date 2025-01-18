@@ -64,7 +64,13 @@ export const navData = [
   {
     category: "Pickles & Chutney",
     href: "#", // No link for this category
-    subCategories: [],
+    subCategories: [
+      { name: "হিলশ মাছ", href: "/categories/meat-fish/fish/hilsha" },
+      { name: "কই মাছ", href: "#" }, // No link for this item
+      { name: "রাঘব মাছ", href: "/categories/meat-fish/fish/raghab" },
+      { name: "বোয়াল মাছ", href: "/categories/meat-fish/fish/boal" },
+      { name: "চিংড়ি মাছ", href: "/categories/meat-fish/fish/prawns" },
+    ],
   },
   {
     category: "Honey",

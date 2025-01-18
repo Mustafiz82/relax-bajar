@@ -34,10 +34,12 @@ const ProductCard = ({ item }) => {
                     {item?.price}
                 </h2>
 
-                <div className='bg-primary p-1 rounded-[10px]'>
+                <div className='bg-primary cursor-pointer p-1 rounded-[10px]'>
                     <FaPlus className='text-xl 2xl:text-2xl text-white' />
                 </div>
             </div>
+
+            
         </div>
     );
 };
