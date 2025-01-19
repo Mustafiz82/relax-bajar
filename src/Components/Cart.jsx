@@ -5,7 +5,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { MdDelete } from 'react-icons/md';
 import { TbCurrencyTaka } from 'react-icons/tb';
 
-const Cart = ({isModalOpen, setIsModalOpen}) => {
+const Cart = ({ isModalOpen, setIsModalOpen }) => {
 
     const closeModal = () => {
         setIsModalOpen(false)
@@ -18,8 +18,8 @@ const Cart = ({isModalOpen, setIsModalOpen}) => {
                 <div className='flex justify-between items-center'>
                     <h1 className='text-xl font-medium 2xl:text-2xl'>My cart </h1>
                     <IoIosCloseCircle
-                    onClick={closeModal}
-                    className='text-primary cursor-pointer text-2xl ' />
+                        onClick={closeModal}
+                        className='text-primary cursor-pointer text-2xl ' />
                 </div>
 
                 <div className='border-2 flex gap-5 p-3  mt-5'>
