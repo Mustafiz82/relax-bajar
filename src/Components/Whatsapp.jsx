@@ -7,7 +7,7 @@ import { IoMdCall } from "react-icons/io";
 const Whatsapp = ({ isWhatsappOpen, setIsWhatsappOpen }) => {
 
     const closeModal = () => {
-        setIsModalOpen(false)
+        setIsWhatsappOpen(false)
     }
 
     return (
@@ -21,9 +21,9 @@ const Whatsapp = ({ isWhatsappOpen, setIsWhatsappOpen }) => {
                         </h1>
                     </div>
                     <div className='text-2xl  flex gap-3 text-white'>
-                        <IoMdCall />
-                        <BiSolidVideoPlus />
-                        <MdClose />
+                        <IoMdCall className='cursor-pointer' />
+                        <BiSolidVideoPlus  className='cursor-pointer'/>
+                        <MdClose className='cursor-pointer' onClick={closeModal} />
 
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const Whatsapp = ({ isWhatsappOpen, setIsWhatsappOpen }) => {
                     <div className='h-[280px] flex pb-10 flex-col-reverse  '>
                         <div className='flex gap-2'>
                             <div className="bg-gray-200 rounded-full w-10 h-10 "></div>
-                            <div className='text-sm space-y-1'>
+                            <div className='text-sm mt-1 space-y-1'>
                                 <h1 className=''>As-salamu alaykum Sir.</h1>
                                 <h1 className=''>How can we help you?</h1>
                             </div>
