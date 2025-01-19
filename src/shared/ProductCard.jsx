@@ -17,8 +17,8 @@ const ProductCard = ({ item }) => {
             </div>
 
             <h1
-                style={{ minHeight: 'calc(2 * 1.25rem + 1.75rem)' }}
-                className='text-xl line-clamp-2 leading-7     2xl:text-2xl font-medium'>
+                style={{ minHeight: 'calc(2 * 1.25rem + 1.75rem )' }}
+                className='text-lg md:text-xl  sm:line-clamp-2 leading-7     2xl:text-2xl font-medium'>
                 {item?.name?.split('(')[0]}
                 {item?.name?.includes('(') && (
                     <span className="block">

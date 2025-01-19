@@ -31,7 +31,7 @@ const Category = () => {
     };
 
     return (
-        <div className="mx-5  my-14 lg:border-2 transition-[height] duration-500 border-primary rounded-[10px] lg:p-5">
+        <div className="mx-5  lg:mx-0 my-14 lg:border-2 transition-[height] duration-500 border-primary rounded-[10px] lg:p-5">
             <div className="flex justify-between">
                 <h1 className="text-xl 2xl:text-2xl font-bold text-primary">Product Category</h1>
                 <div onClick={handleShowCategoryProduct} className='flex gap-1 cursor-pointer items-center'>
@@ -44,7 +44,7 @@ const Category = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-5 my-5 lg:gap-5">
+            <div className="grid grid-cols-2  sm:grid-cols-3 lg:grid-cols-5 my-5 gap-5">
                 {categoryData?.slice(0, slicedProductNumber)?.map((item, idx) => (
                     <div key={idx}>
                         {/* Category Card */}
@@ -78,7 +78,7 @@ const Category = () => {
 
             {/* Expanded Content */}
             {expandedCategory !== null && (
-                <div className="grid grid-cols-1 lg:mt-10 lg:grid-cols-5 lg:my-5 gap-5">
+                <div className="grid grid-cols-2  sm:grid-cols-3 lg:grid-cols-5 my-5 gap-5">
                     {productArray?.map((item, idx) => (
                         <ProductCard key={idx} item={item} />
                     ))}

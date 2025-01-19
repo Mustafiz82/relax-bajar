@@ -27,7 +27,7 @@ const ReachOut = () => {
                 <div className='w-full  rounded-[10px] bg-primary px-6 h-[120px] flex items-center justify-center'>
                     <h2>Family</h2>
                 </div>
-                <div className='w-full max-w-[200px] rounded-[10px] bg-primary px-6 h-[120px] flex items-center justify-center'>
+                <div className='w-full  rounded-[10px] bg-primary px-6 h-[120px] flex items-center justify-center'>
                     <h2>Office</h2>
                 </div>
             </div>
