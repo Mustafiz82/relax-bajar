@@ -13,7 +13,7 @@ const Cart = ({ isModalOpen, setIsModalOpen }) => {
 
     return (
         <div className={`fixed inset-0 flex  justify-end bg-white bg-opacity-40 z-[9999] ${isModalOpen ? "" : "hidden"}`}>
-            <div className='w-[450px] p-10 bg-white shadow-lg  mr-[40px] mt-[90px] min-h-[300px] h-fit'>
+            <div className='w-[450px] p-5 md:p-10 bg-white shadow-lg  md:mr-[40px] mt-[90px] h-screen md:h-fit min-h-[300px] '>
 
                 <div className='flex justify-between items-center'>
                     <h1 className='text-xl font-medium 2xl:text-2xl'>My cart </h1>

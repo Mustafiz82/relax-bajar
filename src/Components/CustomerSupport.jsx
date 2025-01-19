@@ -10,7 +10,7 @@ const CustomerSupport = ({ isCustomerSupportOpen, setIsCustomerSupportOpen }) =>
 
     return (
         <div className={`fixed z-[9999] bottom-0 right-0 ${isCustomerSupportOpen ? "" : "hidden"}`}>
-            <div className='w-[350px] bg-primary p-2 pt-3 rounded-[10px]  shadow-lg  mr-[40px] mt-[90px] min-h-[500px]  '>
+            <div className='w-screen md:w-[350px] bg-primary p-2 pt-3 rounded-[10px]  shadow-lg  md:mr-[40px] mt-[90px] h-screen md:h-auto min-h-[500px]  '>
                 <div className='flex justify-between items-center'>
                     <div className='flex gap-2 items-center'>
 
@@ -24,7 +24,7 @@ const CustomerSupport = ({ isCustomerSupportOpen, setIsCustomerSupportOpen }) =>
 
                     </div>
                 </div>
-                <div className='bg-white px-2 mt-2 h-[440px]'>
+                <div className='bg-white px-2 mt-2 h-[calc(100vh-100px)] md:h-[440px]'>
                     <div className='mx-2  pt-5   '>
                         <h1 className='text-lg font-medium text-center'>Welcome to Relax bazar Customer
                             Support! We are here to assist you!  </h1>

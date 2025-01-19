@@ -12,7 +12,7 @@ const Whatsapp = ({ isWhatsappOpen, setIsWhatsappOpen }) => {
 
     return (
         <div className={`fixed z-[9999] bottom-0 right-0 ${isWhatsappOpen ? "" : "hidden"}`}>
-            <div className='w-[350px] bg-[#3BE85A] p-2 pt-3 rounded-[10px]  shadow-lg  mr-[40px] mt-[90px] min-h-[400px] h-fit '>
+            <div className='w-screen md:w-[350px] bg-[#3BE85A] p-2 pt-3 rounded-[10px]  shadow-lg  lg:mr-[40px] mt-[90px]  md:min-h-[400px]  '>
                 <div className='flex justify-between items-center'>
                     <div className='flex gap-2 items-center'>
                         <FaWhatsapp className='text-3xl bg-white p-1 rounded-md text-[#3BE85A]' />
@@ -27,8 +27,8 @@ const Whatsapp = ({ isWhatsappOpen, setIsWhatsappOpen }) => {
 
                     </div>
                 </div>
-                <div className='bg-white px-2 mt-2 h-[340px]'>
-                    <div className='h-[280px] flex pb-10 flex-col-reverse  '>
+                <div className='bg-white px-2 mt-2 h-[calc(100vh-80px)] md:h-[340px]'>
+                    <div className='h-[calc(100vh-150px)] md:h-[280px] flex pb-10 flex-col-reverse  '>
                         <div className='flex gap-2'>
                             <div className="bg-gray-200 rounded-full w-10 h-10 "></div>
                             <div className='text-sm mt-1 space-y-1'>
