@@ -9,11 +9,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" lg:mx-[40px]  lg:pt-0 2xl:mx-[60px]">
+    <div className=" lg:mx-[40px] mt-[120px] lg:mt-0 lg:pt-0 2xl:mx-[60px]">
       <Banner />
       <ReachOut />
-      <Category />\
-      <ProductListSection
+     <Category />
+        <ProductListSection
         data={dailyBajarData}
         title={"Daily Bazar"}
       />
@@ -28,7 +28,7 @@ export default function Home() {
       <ProductListSection
         data={spicesData}
         title={"Spices"}
-      />
+      /> 
     </div>
   );
 }

@@ -21,7 +21,7 @@ const Banner = () => {
 
             {/* Subcategories Dropdown */}
             <div
-              className={`absolute -mt-16 top-[20px] left-[200px] z-[999]  text-black  min-h-[300px] shadow-md duration-300 ease-in-out transform ${
+              className={`absolute bg-white -mt-16 top-[20px] left-[200px] z-[999]  text-black  min-h-[300px] shadow-md duration-300 ease-in-out transform ${
                 hoveredIndex === idx && item?.subCategories?.length
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 pointer-events-none"
@@ -48,7 +48,7 @@ const Banner = () => {
                   ))}
                 </div>
               ) : (
-                <div className="duration-300 min-w-[250px] space-y-2 px-5 py-6 gap-10">
+                <div className="duration-300  min-w-[250px] space-y-2 px-5 py-6 gap-10">
                   {item?.subCategories?.map((subItem, subIdx) => (
                     <div key={subIdx} className="flex-1">
                       <p className="text-lg cursor-pointer 2xl:text-xl font-medium">
@@ -62,7 +62,7 @@ const Banner = () => {
           </li>
         ))}
       </ul>
-      <div className="bg-primary mt-1 !z-[-9999] overflow-hidden lg:rounded-[10px]  min-h-[250px] relative lg:min-h-[400px] w-full lg:w-3/4">
+      <div className="bg-primary  mt-1 !z-[-9999] overflow-hidden lg:rounded-[10px]  min-h-[250px] relative lg:min-h-[400px] w-full lg:w-3/4">
         <Slider />
       </div>
     </div>

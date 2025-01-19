@@ -18,7 +18,7 @@ const ProductListSection = ({data , title}) => {
         }; 
 
     return (
-        <div className="my-14  border-2 transition-[height] duration-500 border-primary rounded-[10px] p-5">
+        <div className="my-14 mx-5 lg:mx-0  lg:border-2 transition-[height] duration-500 border-primary rounded-[10px] lg:p-5">
         <div className="flex justify-between">
             <h1 className="text-2xl font-bold text-primary">{title}</h1>
             <div onClick={handleShowCategoryProduct} className='flex gap-1 cursor-pointer items-center'>
@@ -31,7 +31,7 @@ const ProductListSection = ({data , title}) => {
             </div>
         </div>
 
-        <div className="grid grid-cols-5 my-5 gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-5 my-5 gap-5">
             {data?.slice(0, slicedProductNumber)?.map((item, idx) => (
                 <div key={idx}>
                     {/* Category Card */}
