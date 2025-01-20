@@ -13,7 +13,7 @@ const page = () => {
 
     console.log(file);
     return (
-        <div className='mx-5   2xl:mx-[60px] pb-40 lg:mx-[40px] mt-[120px] lg:mt-0  pt-10'>
+        <div className=' pb-40  3xl:pt-28  pt-10 max-w-screen-3xl mx-auto  2xl:mx-[60px] lg:mx-[40px] mt-[120px] lg:mt-0 lg:pt-0 3xl:mx-auto 3xl:px-[60px]'>
             <label
                 htmlFor='file-upload'
                 className='bg-primary w-full relative flex flex-col gap-20 justify-center items-center cursor-pointer h-[500px]'

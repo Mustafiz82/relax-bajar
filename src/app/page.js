@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" lg:mx-[40px] mt-[120px] lg:mt-0 lg:pt-0 2xl:mx-[60px]">
+    <div className="max-w-screen-3xl mx-auto  2xl:mx-[60px] lg:mx-[40px] mt-[120px] lg:mt-0 lg:pt-0 3xl:mx-auto 3xl:px-[60px]">
       <Banner />
       <ReachOut />
      <Category />

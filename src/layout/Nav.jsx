@@ -27,7 +27,7 @@ const Nav = () => {
     };
 
     return (
-        <div className="w-screen    lg:sticky fixed  top-0 z-[999] lg:w-auto overflow-hidden">
+        <div className="w-screen    lg:sticky fixed  top-0 z-[999] lg:w-auto overflow-hidden ">
 
             {/* navbar logo and icons for mobile and all for large device  */}
             <div className=" sticky !z-[999] top-0">

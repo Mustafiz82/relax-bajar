@@ -14,13 +14,13 @@ const ReachOut = () => {
                 <Link href={"/file-upload"} className='w-full  rounded-[10px] bg-primary px-6 h-[120px] flex items-center justify-center'>
                     <h2>Upload your List</h2>
                 </Link>
-                <div onClick={() => setIsWhatsappOpen(true)} className='w-full  rounded-[10px] bg-[#50BA00] px-6 h-[120px] flex items-center justify-center'>
+                <div onClick={() => setIsWhatsappOpen(true)} className='w-full  rounded-[10px] cursor-pointer bg-[#50BA00] px-6 h-[120px] flex items-center justify-center'>
                     <h2>Whats app</h2>
                 </div>
                 <div className='w-full  rounded-[10px] bg-primary px-6 h-[120px] flex items-center justify-center'>
                     <h2>Call to Order</h2>
                 </div>
-                <div onClick={() => setIsCustomerSupportOpen(true)} className='w-full  rounded-[10px] bg-primary px-6 h-[120px] flex items-center justify-center'>
+                <div onClick={() => setIsCustomerSupportOpen(true)} className='w-full cursor-pointer  rounded-[10px] bg-primary px-6 h-[120px] flex items-center justify-center'>
                     <h2>Customer
                         Support</h2>
                 </div>

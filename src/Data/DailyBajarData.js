@@ -37,5 +37,5 @@ export const dailyBajarData = [
       weight: "1 Kg",
       price: 65,
       image: "/images/daily_bajar/brown_rice.png",
-    }
+    },
   ]

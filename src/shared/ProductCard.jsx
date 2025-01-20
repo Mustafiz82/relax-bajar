@@ -5,20 +5,20 @@ import { FaPlus } from "react-icons/fa6";
 
 const ProductCard = ({ item }) => {
     return (
-        <div className='p-5 space-y-3 bg-white'>
-            <div className="relative  w-full h-0 pb-[100%]">
+        <div className='p-5  rounded-md border-[3px] group hover:shadow-lg duration-300 border-[#CECECE] space-y-3 bg-white'>
+            <div className="relative   w-full h-0 pb-[100%]">
                 <Image
                     src={item?.image}
                     alt={item?.name}
                     layout="fill"
                     objectFit="contain"
-                    className='  '
+                    className=' p-3 group-hover:p-0 duration-300'
                 />
             </div>
 
             <h1
                 style={{ minHeight: 'calc(2 * 1.25rem + 1.75rem )' }}
-                className='text-lg md:text-xl  sm:line-clamp-2 leading-7     2xl:text-2xl font-medium'>
+                className='text-lg group-hover:text-primary duration-300 md:text-xl  sm:line-clamp-2 leading-7     2xl:text-2xl font-medium'>
                 {item?.name?.split('(')[0]}
                 {item?.name?.includes('(') && (
                     <span className="block">

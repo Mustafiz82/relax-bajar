@@ -2,7 +2,7 @@
 import { categoryData } from '@/Data/CategoryData';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import ProductCard from '../shared/ProductCard';
 
 const Category = () => {
@@ -35,7 +35,7 @@ const Category = () => {
             <div className="flex justify-between">
                 <h1 className="text-xl 2xl:text-2xl font-bold text-primary">Product Category</h1>
                 <div onClick={handleShowCategoryProduct} className='flex gap-1 cursor-pointer items-center'>
-                    <span> View more</span>
+                    <span className='hover:text-primary duration-300'> View more</span>
                     <button
                         className={`text-2xl  text-primary transition-transform duration-300 ${ShowCategoryProduct ? 'rotate-180' : ''}`}
                     >
@@ -49,27 +49,32 @@ const Category = () => {
                     <div key={idx}>
                         {/* Category Card */}
                         <div
-                            className={`h-fit p-8 bg-white gap-2 flex flex-col items-center justify-center cursor-pointer 
+                            className={`h-fit group p-8 bg-white gap-2 flex flex-col items-center justify-center cursor-pointer 
                             ${expandedCategory !== null && expandedCategory !== idx ? 'opacity-50 cursor-not-allowed ' : ''}`}
                             onClick={() => {
+                                if (item?.products?.length < 1){
+                                    return
+                                }
                                 if (expandedCategory === null || expandedCategory === idx) {
                                     handleProductExpand(item?.products, idx);
                                 }
                             }}
                         >
-                            <div className="relative w-full h-0 pb-[100%]">
+                            <div className="relative  w-full h-0 pb-[100%]">
                                 <Image
                                     src={item?.image}
                                     alt={item?.name}
                                     layout="fill"
                                     objectFit="contain"
+                                    className='p-3 group-hover:p-0 duration-300'
                                 />
                             </div>
                             <h1 className="text-primary text-xl 2xl:text-2xl font-medium">{item?.name}</h1>
                             <button
-                                className={`text-2xl text-primary transition-transform duration-300 ${expandedCategory === idx ? 'rotate-180' : ''}`}
+                                
+                                className={`${item?.products?.length < 1 ? "invisible"  : "visible"} text-2xl text-primary transition-transform duration-300 ${expandedCategory === idx ? 'rotate-180' : ''}`}
                             >
-                                <MdKeyboardArrowUp />
+                                <MdKeyboardArrowDown />
                             </button>
                         </div>
                     </div>
